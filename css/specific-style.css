@@ -1,0 +1,12 @@
+#Elements {
+  text-align: center;
+  vertical-align: center;
+}
+#Elements td {
+  width: 38px;
+  height: 32px;
+}
+
+#code {
+  width: 400px;
+}
