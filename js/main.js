@@ -1,11 +1,11 @@
 function inputcode(x) {
-  let origin = document.getElementById("code").value;
-  document.getElementById("code").value = origin + x;
+  let origin = document.getElementById('code').value;
+  document.getElementById('code').value = origin + x;
 }
 
 function copy() {
   var content = `\u0024\\ce\u007B${
-    document.getElementById("code").value
+    document.getElementById('code').value
   }\u007D\u0024`;
 
   navigator.clipboard
@@ -16,8 +16,4 @@ function copy() {
     .catch((err) => {
       console.error(err);
     });
-}
-
-function clear() {
-  document.getElementById("code").value = "";
 }

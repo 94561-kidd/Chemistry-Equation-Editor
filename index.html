@@ -19,9 +19,14 @@
     <hr />
 
     <center>
-      <br />$\ce{<input type="text" id="code" name="code" />}$
+      <br />$\ce{<input type="text" id="code" value="" />}$
       <input type="button" id="copy" value="複製" onclick="copy()" />
-      <input type="button" id="claer" value="Clear" onclick="clear()" />
+      <input
+        type="button"
+        id="clear"
+        value="Clear"
+        onclick="document.getElementById('code').value = ''"
+      />
       <br /><br />
     </center>
 
