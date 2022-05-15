@@ -1,18 +1,21 @@
 body {
   font-family: Consolas;
-  font-size: 20px;
+  font-size: 13pt;
 
   background: radial-gradient(ellipse 80% 80% at center, #f3f2ee, #d5d5d0);
 }
 
-input.input[type="button"] {
-  border-radius: 8px;
-  background-color: #f3f2ee;
-}
-input.input[type="button"]:hover {
-  background-color: #dbdbdb;
-}
-input.input[type="button"]:active {
-  background-color: #f3f2ee;
+h1 {
+  font-size: 18pt;
 }
 
+input.input[type="button"] {
+  border-radius: 6pt;
+  background-color: #efefef;
+}
+input.input[type="button"]:hover {
+  background-color: #e5e5e5;
+}
+input.input[type="button"]:active {
+  background-color: #efefef;
+}
