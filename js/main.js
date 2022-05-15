@@ -17,3 +17,7 @@ function copy() {
       console.error(err);
     });
 }
+
+function clear() {
+  document.getElementById("code").value = "";
+}
