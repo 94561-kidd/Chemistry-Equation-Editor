@@ -15,9 +15,6 @@
     <script src="./js/main.js"></script>
   </head>
   <body>
-    <center><h1>化學反應式編輯器</h1></center>
-    <hr />
-
     <center>
       <br />$\ce{<input type="text" id="code" value="" />}$
       <input type="button" id="copy" value="複製" onclick="copy()" />
@@ -29,7 +26,6 @@
       />
       <br /><br />
     </center>
-
     <center>
       <table id="Elements">
         <thead></thead>
@@ -368,165 +364,181 @@
       </table>
       <br />
     </center>
-
     <center>
-      <input
-        type="button"
-        class="input"
-        value="2"
-        onclick="inputcode(this.value)"
-      />
-      <input
-        type="button"
-        class="input"
-        value="3"
-        onclick="inputcode(this.value)"
-      />
-      <input
-        type="button"
-        class="input"
-        value=" + "
-        onclick="inputcode(this.value)"
-      />
-      <input
-        type="button"
-        class="input"
-        value="^2+"
-        onclick="inputcode(this.value)"
-      />
-      <input
-        type="button"
-        class="input"
-        value=" - "
-        onclick="inputcode(this.value)"
-      />
-      <input
-        type="button"
-        class="input"
-        value="^2-"
-        onclick="inputcode(this.value)"
-      />
-      <input
-        type="button"
-        class="input"
-        value=" -> "
-        onclick="inputcode(this.value)"
-      />
-      <input
-        type="button"
-        class="input"
-        value=" ->T[ △ ] "
-        onclick="inputcode(this.value)"
-      />
-      <input
-        type="button"
-        class="input"
-        value=" ->T[ °C ] "
-        onclick="inputcode(this.value)"
-      />
-      <input
-        type="button"
-        class="input"
-        value=" v "
-        onclick="inputcode(this.value)"
-      />
-      <input
-        type="button"
-        class="input"
-        value=" ^ "
-        onclick="inputcode(this.value)"
-      />
-      <input
-        type="button"
-        class="input"
-        value="(s) "
-        onclick="inputcode(this.value)"
-      />
-      <input
-        type="button"
-        class="input"
-        value="(l) "
-        onclick="inputcode(this.value)"
-      />
-      <input
-        type="button"
-        class="input"
-        value="(g) "
-        onclick="inputcode(this.value)"
-      />
-      <input
-        type="button"
-        class="input"
-        value="(aq) "
-        onclick="inputcode(this.value)"
-      />
-      <input
-        type="button"
-        class="input"
-        value="*"
-        onclick="inputcode(this.value)"
-      />
-      <br /><br />
-    </center>
-
-    <center>
-      <input
-        type="button"
-        class="input"
-        value="NH4"
-        onclick="inputcode(this.value)"
-      />
-      <input
-        type="button"
-        class="input"
-        value="OH"
-        onclick="inputcode(this.value)"
-      />
-      <input
-        type="button"
-        class="input"
-        value="H2O"
-        onclick="inputcode(this.value)"
-      />
-      <input
-        type="button"
-        class="input"
-        value="CO2"
-        onclick="inputcode(this.value)"
-      />
-      <input
-        type="button"
-        class="input"
-        value="CO3"
-        onclick="inputcode(this.value)"
-      />
-      <input
-        type="button"
-        class="input"
-        value="HCO3"
-        onclick="inputcode(this.value)"
-      />
-      <input
-        type="button"
-        class="input"
-        value="SO4"
-        onclick="inputcode(this.value)"
-      />
-      <input
-        type="button"
-        class="input"
-        value="NO2"
-        onclick="inputcode(this.value)"
-      />
-      <input
-        type="button"
-        class="input"
-        value="NO3"
-        onclick="inputcode(this.value)"
-      />
+      <div>
+        <div id="div1">
+          <input
+            type="button"
+            class="input"
+            value="+"
+            onclick="inputcode(this.value)"
+          />
+          <input
+            type="button"
+            class="input"
+            value="^2+ "
+            onclick="inputcode(this.value)"
+          />
+          <input
+            type="button"
+            class="input"
+            value="-"
+            onclick="inputcode(this.value)"
+          />
+          <input
+            type="button"
+            class="input"
+            value="^2-"
+            onclick="inputcode(this.value)"
+          />
+          <input
+            type="button"
+            class="input"
+            value=" -> "
+            onclick="inputcode(this.value)"
+          />
+          <input
+            type="button"
+            class="input"
+            value=" ->T[ △ ] "
+            onclick="inputcode(this.value)"
+          />
+          <input
+            type="button"
+            class="input"
+            value=" ->T[ °C ] "
+            onclick="inputcode(this.value)"
+          />
+          <br /><br />
+          <input
+            type="button"
+            class="input"
+            value=" v "
+            onclick="inputcode(this.value)"
+          />
+          <input
+            type="button"
+            class="input"
+            value=" ^ "
+            onclick="inputcode(this.value)"
+          />
+          <input
+            type="button"
+            class="input"
+            value="(s) "
+            onclick="inputcode(this.value)"
+          />
+          <input
+            type="button"
+            class="input"
+            value="(l) "
+            onclick="inputcode(this.value)"
+          />
+          <input
+            type="button"
+            class="input"
+            value="(g) "
+            onclick="inputcode(this.value)"
+          />
+          <input
+            type="button"
+            class="input"
+            value="(aq) "
+            onclick="inputcode(this.value)"
+          />
+        </div>
+        <div style="display: inline-block">&emsp;</div>
+        <div id="div2">
+          <input
+            type="button"
+            class="input"
+            value="2"
+            onclick="inputcode(this.value)"
+          />
+          <input
+            type="button"
+            class="input"
+            value="3"
+            onclick="inputcode(this.value)"
+          />
+          <input
+            type="button"
+            class="input"
+            value="*"
+            onclick="inputcode(this.value)"
+          />
+          <br /><br />
+          <input
+            type="button"
+            class="input"
+            value=" + "
+            onclick="inputcode(this.value)"
+          />
+          <input
+            type="button"
+            class="input"
+            value=" - "
+            onclick="inputcode(this.value)"
+          />
+        </div>
+      </div>
       <br />
+      <div>
+        <input
+          type="button"
+          class="input"
+          value="NH4"
+          onclick="inputcode(this.value)"
+        />
+        <input
+          type="button"
+          class="input"
+          value="OH"
+          onclick="inputcode(this.value)"
+        />
+        <input
+          type="button"
+          class="input"
+          value="H2O"
+          onclick="inputcode(this.value)"
+        />
+        <input
+          type="button"
+          class="input"
+          value="CO2"
+          onclick="inputcode(this.value)"
+        />
+        <input
+          type="button"
+          class="input"
+          value="CO3"
+          onclick="inputcode(this.value)"
+        />
+        <input
+          type="button"
+          class="input"
+          value="HCO3"
+          onclick="inputcode(this.value)"
+        />
+        <input
+          type="button"
+          class="input"
+          value="SO4"
+          onclick="inputcode(this.value)"
+        />
+        <input
+          type="button"
+          class="input"
+          value="NO2"
+          onclick="inputcode(this.value)"
+        />
+        <input
+          type="button"
+          class="input"
+          value="NO3"
+          onclick="inputcode(this.value)"
+        />
+      </div>
     </center>
-
-    <br /><br />
   </body>
 </html>
