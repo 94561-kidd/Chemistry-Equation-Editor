@@ -16,7 +16,13 @@
   </head>
   <body>
     <center>
-      <br />$\ce{<input type="text" id="code" value="" />}$
+      <br />$\ce{<input
+        type="text"
+        id="code"
+        value=""
+        onfocus="code_onfocus=1"
+        onblur="code_onfocus=0"
+      />}$
       <input type="button" id="copy" value="複製" onclick="copy()" />
       <input
         type="button"
