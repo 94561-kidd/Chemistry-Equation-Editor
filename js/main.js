@@ -5,6 +5,12 @@ function inputcode(x) {
 }
 
 function copy() {
+  var str = document.getElementById("code").value;
+  if (str.slice(-1) == " ") {
+    document.getElementById("code").value = str.substring(0, str.length - 1);
+  }
+  fix_double_blank();
+
   var content = `\u0024\\ce\u007B${
     document.getElementById("code").value
   }\u007D\u0024`;
@@ -17,8 +23,6 @@ function copy() {
     .catch((err) => {
       console.error(err);
     });
-
-  fix_double_blank();
 }
 
 function fix_double_blank() {
@@ -27,6 +31,7 @@ function fix_double_blank() {
   while (str.indexOf("  ") != -1) {
     str = str.replace("  ", " ");
   }
+
   document.getElementById("code").value = str;
 }
 
