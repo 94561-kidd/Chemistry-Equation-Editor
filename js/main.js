@@ -47,6 +47,11 @@ function keyDown() {
   var keynum = event.keyCode;
   var keystr = "";
 
+  if (keynum == 17) {
+    copy();
+    return 1;
+  }
+
   if (event.shiftKey == 1) {
     if (keynum >= 65 && keynum <= 90) {
       keystr = String.fromCodePoint(keynum);
@@ -69,6 +74,9 @@ function keyDown() {
           break;
         case 190:
           keystr = ">";
+          break;
+        case 192:
+          keystr = "~";
           break;
       }
     }
