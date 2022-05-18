@@ -25,6 +25,11 @@ function copy() {
     });
 }
 
+function backspace(){
+  var str = document.getElementById("code").value;
+  document.getElementById("code").value = str.substring(0, str.length - 1);
+}
+
 function fix_double_blank() {
   var str = document.getElementById("code").value;
 
@@ -115,7 +120,6 @@ function keyDown() {
   }
   document.getElementById("code").value += keystr;
   if (keynum == 8) {
-    var str = document.getElementById("code").value;
-    document.getElementById("code").value = str.substring(0, str.length - 1);
+    backspace();
   }
 }
