@@ -5,15 +5,15 @@ function inputcode(x) {
 }
 
 function copy() {
-  var str = document.getElementById("code").value;
-  if (str.slice(-1) == " ") {
-    document.getElementById("code").value = str.substring(0, str.length - 1);
-  }
   fix_double_blank();
 
-  var content = `\u0024\\ce\u007B${
-    document.getElementById("code").value
-  }\u007D\u0024`;
+  var x = document.getElementById("code");
+  var str = x.value;
+  if (str.slice(-1) == " ") {
+    x.value = str.substring(0, str.length - 1);
+  }
+
+  var content = `\u0024\\ce\u007B${x.value}\u007D\u0024`;
 
   navigator.clipboard
     .writeText(content)
@@ -25,19 +25,20 @@ function copy() {
     });
 }
 
-function backspace(){
-  var str = document.getElementById("code").value;
-  document.getElementById("code").value = str.substring(0, str.length - 1);
+function backspace() {
+  var x = document.getElementById("code");
+  var str = x.value;
+  x.value = str.substring(0, str.length - 1);
 }
 
 function fix_double_blank() {
-  var str = document.getElementById("code").value;
+  var x = document.getElementById("code");
+  var str = x.value;
 
   while (str.indexOf("  ") != -1) {
     str = str.replace("  ", " ");
   }
-
-  document.getElementById("code").value = str;
+  x.value = str;
 }
 
 var code_onfocus = 0;
